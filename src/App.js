@@ -18,11 +18,11 @@ class App extends Component {
   findFilm = (e) => {
     e.preventDefault()
     if (this.state.filmName.length > 1) {
-      fetch(`http://swapi.co/api/films/?search=${this.state.filmName}`)
+      fetch(`https://swapi.co/api/films/?search=${this.state.filmName}`)
       .then((res) => res.json())
       .then((film) => this.setState({film: film.results[0]}))
     } else {
-      fetch(`http://swapi.co/api/films/`)
+      fetch(`https://swapi.co/api/films/`)
       .then((res) => res.json())
       .then((data) => {
         let film = data.results.find((result) => result.episode_id === parseInt(this.state.filmName))
