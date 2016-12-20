@@ -40,7 +40,7 @@ class App extends Component {
         <div className='search'>
           { !this.state.film ?
             <form onSubmit={this.findFilm}>
-              <h3> Search for a Film by Name of Episode Number</h3>
+              <h3> Search for a Film by Name <br/>or<br/> Episode Number</h3>
               <input type='text' onChange={this.setFilmName}/>
             </form>
             : <h3>{this.state.film.title}</h3>
