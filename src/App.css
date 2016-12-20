@@ -3,8 +3,6 @@
 }
 
 body {
-    display: 'flex';
-    justify-content: 'center';
      background: black;
      color: yellow;
      font-family: Helvetica;
@@ -19,12 +17,14 @@ body {
  }
 
  input[type="text"], textarea {
-   height: 5em;
+   /*height: 5em;*/
    border: 1px solid yellow;
-   margin: 6em auto;
+   /*margin: 6em auto;*/
    background-color: black;
    color: yellow;
    width: 60%;
+   font-size: 2em;
+   outline: none;
  }
 
  .search{
@@ -33,9 +33,10 @@ body {
 
 .title {
         position: absolute;
-        width:100%;
+        width: 100%;
         height: 50em;
         bottom: 0;
+        line-height: 1.5;
         /*left: 50%;*/
         /*margin-left: -9em;*/
         margin: 0 auto;
@@ -89,5 +90,6 @@ body {
 @media screen and (max-width: 600px) {
     .title {
         font-size: 200%;
+        line-height: normal;
     }
 }
