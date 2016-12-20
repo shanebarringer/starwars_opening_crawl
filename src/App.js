@@ -15,6 +15,9 @@ class App extends Component {
     this.setState({filmName: e.target.value})
   }
 
+
+
+
   findFilm = (e) => {
     e.preventDefault()
     if (this.state.filmName.length > 1) {
@@ -33,7 +36,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="app">
         <div className='search'>
           { !this.state.film ?
             <form onSubmit={this.findFilm}>
